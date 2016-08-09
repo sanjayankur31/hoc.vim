@@ -10,3 +10,10 @@ Installation
 ------------
 
 Place in :code:`~/.vim/syntax` or use :code:`pathogen` and the rest - you know what to do :)
+
+At the end of your :code:`vimrc` file, add:
+
+.. code:: vim
+
+    au BufRead,BufNewFile *.hoc set filetype=hoc
+
