@@ -15,6 +15,9 @@ syn keyword Operator "^" "-" "*" "/" "%" "+" "x" "==" "!=" "<" "<=" ">" ">=" "&&
 syn keyword Todo TODO FIXME ??? XXX containedin=Comment contained
 
 syn match Comment "//.*$"
+syn region CommentBlock start="/\*" end=".*\*/" fold
+hi def link CommentBlock Comment
+
 syn match var "[_a-zA-Z0-9]\+" transparent contains=NONE
 syn match Number "\(-\s*\)\?\d\+\(\.\d*\)\?"
 syn match Number "\(-\s*\)\?\d*\.\d\+"
