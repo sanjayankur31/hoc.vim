@@ -2,6 +2,12 @@ if exists("b:current_syntax")
     finish
 endif
 
+setlocal softtabstop=2
+setlocal cindent shiftwidth=2
+setlocal tabstop=2
+setlocal expandtab
+setlocal cindent
+
 syn keyword Statement help return break continue stop print delete read debug em setpointer insert uninsert
 syn keyword Statement public external
 syn keyword Statement new nextgroup=objinit skipwhite
