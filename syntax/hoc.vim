@@ -7,6 +7,7 @@ setlocal cindent shiftwidth=2
 setlocal tabstop=2
 setlocal expandtab
 setlocal cindent
+setlocal foldmethod=syntax
 
 syn keyword Statement help return break continue stop print delete read debug em setpointer insert uninsert
 syn keyword Statement public external
